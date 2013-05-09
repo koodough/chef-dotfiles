@@ -15,6 +15,7 @@ package 'git-core' do
   action :install
   options '--force-yes'
 end
+end
 
 # Retrieving admins collection
 admins = data_bag("admins")
