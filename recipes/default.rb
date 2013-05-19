@@ -8,13 +8,13 @@
 # Installing required git core-packages
 case node['platform']
 when "gentoo"
-  package 'git' do
+	package 'git' do
 		action :install
-	else
-		package 'git-core' do
-			action :install
-			options '--force-yes'
-		end
+	end
+else
+	package 'git-core' do
+		action :install
+		options '--force-yes'
 	end
 end
 
